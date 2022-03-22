@@ -1,0 +1,57 @@
+{
+  "name": "ts-cliche-unions",
+  "version": "1.0.7",
+  "description": "npm library for typescript",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build:ts": "tsc",
+    "build": "npm run clean && npm run build:ts",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kawaken555/ts-cliche-unions.git"
+  },
+  "keywords": [
+    "attribute",
+    "const",
+    "enum",
+    "event",
+    "event.key",
+    "event.keycode",
+    "event.type",
+    "key",
+    "javascript",
+    "js",
+    "keycodes",
+    "typescript",
+    "ts",
+    "union"
+  ],
+  "author": "Kawaken555",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kawaken555/ts-cliche-unions/issues"
+  },
+  "homepage": "https://github.com/Kawaken555/ts-cliche-unions#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "@typescript-eslint/eslint-plugin": "^5.15.0",
+    "@typescript-eslint/parser": "^5.15.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
+  }
+}

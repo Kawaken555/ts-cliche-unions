@@ -1136,7 +1136,7 @@ export const LINUX_CODE = {
   UnidentifiedOrBlank54: 0x00DD,
   UnidentifiedOrBlank55: 0x00DE,
   UnidentifiedOrBlank56: 0x00DF
-}
+};
 
 /** For a detailed description of Android code_values, please see the following document.
  *  Note that all of the following code is for Firefox.
@@ -1605,7 +1605,7 @@ export const ANDROID_CODE = {
   UnidentifiedOrBlank305: 0x01CC,
   UnidentifiedOrBlank306: 0x01CD,
   UnidentifiedOrBlank307: 0x01CE,
-}
+};
 
 /** For a detailed description of events, please see the following document.
  *  https://developer.mozilla.org/en-US/docs/Web/Events
@@ -1967,13 +1967,13 @@ export const ATTRIBUTE = {
   Wrap: 'wrap'
 } as const;
 
-export type Key = typeof KEY[keyof typeof KEY];
-export type WinCode = typeof WIN_CODE[keyof typeof WIN_CODE];
-export type MacCode = typeof MAC_CODE[keyof typeof MAC_CODE];
-export type LinuxCode = typeof LINUX_CODE[keyof typeof LINUX_CODE];
-export type AndroidCode = typeof ANDROID_CODE[keyof typeof ANDROID_CODE];
-export type Event = typeof EVENT[keyof typeof EVENT];
-export type Attribute = typeof ATTRIBUTE[keyof typeof ATTRIBUTE];
+export type Key = typeof KEY[keyof typeof KEY] | string;
+export type WinCode = typeof WIN_CODE[keyof typeof WIN_CODE] | string | number;
+export type MacCode = typeof MAC_CODE[keyof typeof MAC_CODE] | string | number;
+export type LinuxCode = typeof LINUX_CODE[keyof typeof LINUX_CODE] | string | number;
+export type AndroidCode = typeof ANDROID_CODE[keyof typeof ANDROID_CODE] | string | number;
+export type Event = typeof EVENT[keyof typeof EVENT] | string;
+export type Attribute = typeof ATTRIBUTE[keyof typeof ATTRIBUTE] | string;
 
 export const KEYS = Object.values(KEY);
 export const WIN_CODES = Object.values(WIN_CODE);
@@ -1983,7 +1983,10 @@ export const ANDROID_CODES = Object.values(ANDROID_CODE);
 export const EVENTS = Object.values(EVENT);
 export const ATTRIBUTES = Object.values(ATTRIBUTE);
 
-/**These types are not strict. They accept any string literals. */
+/**
+ * Deprecated.
+ * It will be removed in the next minor update.
+*/
 export type KeyOptional = typeof KEY[keyof typeof KEY] | string;
 export type WinCodeOptional = typeof WIN_CODE[keyof typeof WIN_CODE] | string;
 export type MacCodeOptional = typeof MAC_CODE[keyof typeof MAC_CODE] | string;

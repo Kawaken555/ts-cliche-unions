@@ -5,7 +5,7 @@
 
 # ts-cliche-unions
 A module for writing JavaScript cliché strings safely in TypeScript.      
-It provides string constants and union types for key, event, code, and HTML attributes.  
+It provides string constants and union types for key, event, and HTML attributes.  
 This module does not use enums, so unnecessary code is reduced by treeshaking when compiled.  
 
 # Install

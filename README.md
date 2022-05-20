@@ -1,4 +1,4 @@
-![ts-cliche-unions_MIT](https://user-images.githubusercontent.com/59277458/164591504-aa06b242-9c1d-49bc-a963-a7ccd8124a0f.svg)  ![ts-cliche-unions_top-language](https://user-images.githubusercontent.com/59277458/164592329-a3418110-4228-4558-8fa6-822645c693d7.svg)  
+![ts-cliche-unions_MIT](https://img.shields.io/github/license/Kawaken555/ts-cliche-unions)  ![ts-cliche-unions_top-language](https://user-images.githubusercontent.com/59277458/164592329-a3418110-4228-4558-8fa6-822645c693d7.svg)  
 
 
 

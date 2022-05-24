@@ -638,7 +638,7 @@ export const EVENT = {
   Esc: "Esc",
 } as const;
 
-/** For a detailed description of attributes, please see the following document.
+/** For a detailed description of html attributes, please see the following document.
  *  https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
  */
 export const ATTRIBUTE = {
@@ -775,17 +775,138 @@ export const ATTRIBUTE = {
   Wrap: 'wrap'
 } as const;
 
+/** For a detailed description of html elements, please see the following document.
+ *  https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+ */
+export const ELEMENT = {
+  Html: 'html',
+  Base: 'base',
+  Head: 'head',
+  Link: 'link',
+  Meta: 'meta',
+  Style: 'style',
+  Title: 'title',
+  Body: 'body',
+  Address: 'address',
+  Article: 'article',
+  Aside: 'aside',
+  Footer: 'footer',
+  Header: 'header',
+  H1: 'h1',
+  H2: 'h2',
+  H3: 'h3',
+  H4: 'h4',
+  H5: 'h5',
+  H6: 'h6',
+  Main: 'main',
+  Nav: 'nav',
+  Section: 'section',
+  Blockquote: 'blockquote',
+  Dd: 'dd',
+  Div: 'div',
+  Dl: 'dl',
+  Dt: 'dt',
+  Figcaption: 'figcaption',
+  Figure: 'figure',
+  Hr: 'hr',
+  Li: 'li',
+  Menu: 'menu',
+  Ol: 'ol',
+  P: 'p',
+  Pre: 'pre',
+  Ul: 'ul',
+  A: 'a',
+  Abbr: 'abbr',
+  B: 'b',
+  Bdi: 'bdi',
+  Bdo: 'bdo',
+  Br: 'br',
+  Cite: 'cite',
+  Code: 'code',
+  Data: 'data',
+  Dfn: 'dfn',
+  Em: 'em',
+  I: 'i',
+  Kbd: 'kbd',
+  Mark: 'mark',
+  Q: 'q',
+  Rp: 'rp',
+  Rt: 'rt',
+  Ruby: 'ruby',
+  S: 's',
+  Samp: 'samp',
+  Small: 'small',
+  Span: 'span',
+  Strong: 'strong',
+  Sub: 'sub',
+  Sup: 'sup',
+  Time: 'time',
+  U: 'u',
+  Var: 'var',
+  Wbr: 'wbr',
+  Area: 'area',
+  Audio: 'audio',
+  Img: 'img',
+  Map: 'map',
+  Track: 'track',
+  Video: 'video',
+  Embed: 'embed',
+  Iframe: 'iframe',
+  Object: 'object',
+  Picture: 'picture',
+  Portal: 'portal',
+  Source: 'source',
+  Svg: 'svg',
+  Math: 'math',
+  Canvas: 'canvas',
+  Noscript: 'noscript',
+  Script: 'script',
+  Del: 'del',
+  Ins: 'ins',
+  Caption: 'caption',
+  Col: 'col',
+  Colgroup: 'colgroup',
+  Table: 'table',
+  Tbody: 'tbody',
+  Td: 'td',
+  Tfoot: 'tfoot',
+  Th: 'th',
+  Thead: 'thead',
+  Tr: 'tr',
+  Button: 'button',
+  Datalist: 'datalist',
+  Fieldset: 'fieldset',
+  Form: 'form',
+  Input: 'input',
+  Label: 'label',
+  Legend: 'legend',
+  Meter: 'meter',
+  Optgroup: 'optgroup',
+  Option: 'option',
+  Output: 'output',
+  Progress: 'progress',
+  Select: 'select',
+  Textarea: 'textarea',
+  Details: 'details',
+  Dialog: 'dialog',
+  Summary: 'summary',
+  Slot: 'slot',
+  Template: 'template',
+} as const;
+
 export type Key = typeof KEY[keyof typeof KEY] | string;
 export type Event = typeof EVENT[keyof typeof EVENT] | string;
 export type Attribute = typeof ATTRIBUTE[keyof typeof ATTRIBUTE] | string;
+export type Element = typeof ELEMENT[keyof typeof ELEMENT] | string;
 
 export const KEYS = Object.values(KEY);
 export const EVENTS = Object.values(EVENT);
 export const ATTRIBUTES = Object.values(ATTRIBUTE);
+export const ELEMENTS = Object.values(ELEMENT);
 
 /**
  * Deprecated.
- * It will be removed in the next minor update.
+ * These will be removed soon.
 */
 export type KeyOptional = typeof KEY[keyof typeof KEY] | string;
 export type EventOptional = typeof EVENT[keyof typeof EVENT] | string;

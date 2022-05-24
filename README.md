@@ -1,4 +1,5 @@
-![ts-cliche-unions_MIT](https://img.shields.io/github/license/Kawaken555/ts-cliche-unions)  ![ts-cliche-unions_top-language](https://user-images.githubusercontent.com/59277458/164592329-a3418110-4228-4558-8fa6-822645c693d7.svg)  
+ [![Open in Visual Studio Code](https://img.shields.io/static/v1?logo=visualstudiocode&label=&message=Open%20in%20Visual%20Studio%20Code&labelColor=2c2c32&color=007acc&logoColor=007acc)](https://open.vscode.dev/Kawaken555/ts-cliche-unions)  ![ts-cliche-unions_MIT](https://img.shields.io/github/license/Kawaken555/ts-cliche-unions)  ![ts-cliche-unions_top-language](https://img.shields.io/github/languages/top/Kawaken555/ts-cliche-unions)  ![ts-cliche-unions_npm_v](https://img.shields.io/npm/v/ts-cliche-unions?color=%23f39800) 
+
 
 
 

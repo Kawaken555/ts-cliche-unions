@@ -894,7 +894,8 @@ export const ELEMENT = {
   Template: 'template',
 } as const;
 
-export type Key = typeof KEY[keyof typeof KEY] | string;
-export type Event = typeof EVENT[keyof typeof EVENT] | string;
-export type Attribute = typeof ATTRIBUTE[keyof typeof ATTRIBUTE] | string;
-export type Element = typeof ELEMENT[keyof typeof ELEMENT] | string;
+export type Key = typeof KEY[keyof typeof KEY];
+export type Event = typeof EVENT[keyof typeof EVENT];
+export type Attribute = typeof ATTRIBUTE[keyof typeof ATTRIBUTE];
+export type Element = typeof ELEMENT[keyof typeof ELEMENT];
+

@@ -898,17 +898,3 @@ export type Key = typeof KEY[keyof typeof KEY] | string;
 export type Event = typeof EVENT[keyof typeof EVENT] | string;
 export type Attribute = typeof ATTRIBUTE[keyof typeof ATTRIBUTE] | string;
 export type Element = typeof ELEMENT[keyof typeof ELEMENT] | string;
-
-export const KEYS = Object.values(KEY);
-export const EVENTS = Object.values(EVENT);
-export const ATTRIBUTES = Object.values(ATTRIBUTE);
-export const ELEMENTS = Object.values(ELEMENT);
-
-/**
- * Deprecated.
- * These will be removed soon.
-*/
-export type KeyOptional = typeof KEY[keyof typeof KEY] | string;
-export type EventOptional = typeof EVENT[keyof typeof EVENT] | string;
-export type AttributeOptional = typeof ATTRIBUTE[keyof typeof ATTRIBUTE] | string;
-
